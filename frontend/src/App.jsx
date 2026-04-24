@@ -35,7 +35,7 @@ function App() {
             setLoading(true);
             setError("");
 
-            const response = await fetch("https://expense-tracker-1-ywkd.onrender.com/expenses", {
+            const response = await fetch("https://expense-tracker-2-o0nj.onrender.com/expenses", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -78,7 +78,7 @@ function App() {
 
     const fetchExpenses = async () => {
         try {
-            let url = "https://expense-tracker-1-ywkd.onrender.com/expenses";
+            let url = "https://expense-tracker-2-o0nj.onrender.com/expenses";
 
             const params = [];
 
@@ -118,7 +118,7 @@ function App() {
 
     const deleteExpense = async (id) => {
         try {
-            await fetch(`https://expense-tracker-1-ywkd.onrender.com/expenses/${id}`, {
+            await fetch(`https://expense-tracker-2-o0nj.onrender.com/expenses/${id}`, {
                 method: "DELETE",
             });
 
