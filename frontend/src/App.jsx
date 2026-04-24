@@ -45,7 +45,7 @@ function App() {
                     amount: form.amount ? parseFloat(form.amount) : 0,
                     category: form.category,
                     description: form.description,
-                    date: form.date,
+                    date: new Date(form.date).toISOString().split("T")[0],
                 }),
             });
 
