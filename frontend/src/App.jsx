@@ -39,7 +39,6 @@ function App() {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
-                    "Idempotency-Key": Date.now().toString(),
                 },
                 body: JSON.stringify({
                     amount: form.amount ? parseFloat(form.amount) : 0,
