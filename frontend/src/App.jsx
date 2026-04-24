@@ -225,8 +225,9 @@ function App() {
                                 {" | "}
                                 {exp.description}
                                 {" | "}
-                                {new Date(exp.date).toLocaleDateString()}
-
+                                {Array.isArray(exp.date)
+                                    ? `${exp.date[2]}/${exp.date[1]}/${exp.date[0]}`
+                                    : new Date(exp.date).toLocaleDateString()}
                                 {"  "}
                                 <button
                                     style={{
